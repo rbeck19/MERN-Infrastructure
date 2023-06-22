@@ -1,4 +1,4 @@
-//to run express server in terminial:  nodemon server
+//to run express server in terminal:  nodemon server
     //server side
         //runs port 3001
 //to run React dev server in terminal:  npm start

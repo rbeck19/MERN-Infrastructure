@@ -51,13 +51,13 @@ export default async function sendRequest(url, method="GET", payload=null) {
         options.headers = { "Content-Type": "application/json" }
         options.body = JSON.stringify(payload)
     }
-    //if there is a token inlucucde it in request
+    //if there is a token include it in request
     const token = getToken()
     if(token) {
         //make sure we have headers on our options
         options.headers = options.headers || {}
         //add in our token with an authorization header
-        options.headers.Autorization = `Bearer ${token}`
+        options.headers.Authorization = `Bearer ${token}`
         //make sure you capitalize Authorization
         //best practice is to begin with "Bearer "
     }

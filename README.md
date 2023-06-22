@@ -2,6 +2,15 @@
 
 Clone this repo to provide the starter code for a comprehensive MERN-Stack project including token-based authentication
 
+- To run express server in terminal:  nodemon server
+    - server side
+        - runs port 3001
+- To run React dev server in terminal:  npm start
+    - client side
+        - runs port 3000
+- Requires a .env with DATABASE_URL for MongoDB
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

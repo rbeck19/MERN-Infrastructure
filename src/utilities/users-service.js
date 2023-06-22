@@ -12,10 +12,10 @@ export async function signUp(userData) {
 }
 
 export function getToken() {
-    // get token from local storaghe
+    // get token from local storage
     //get tokens payload
     //check if the token has expired
-    //if it hasnt return the token
+    //if it hasn't return the token
     const token = localStorage.getItem("token")
     if (!token) return null
     //JWT token broken into 3 parts at '.'
@@ -29,7 +29,7 @@ export function getToken() {
     //JavaScript has a built in function for decoding base64 called:  atob()
     const decodedPayload = atob(payload)
     const parsedPayload = JSON.parse(decodedPayload)
-    //JWTs exp is expressed in seconds not miliseconds so convert
+    //JWTs exp is expressed in seconds not milliseconds so convert
     if(parsedPayload.exp < Date.now() / 1000){
         //token has expired    remove it
         localStorage.removeItem("token")
